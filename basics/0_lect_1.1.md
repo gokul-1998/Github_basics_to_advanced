@@ -49,4 +49,10 @@
 - `git checkout -b <branch_name> origin/<branch_name>` is used to create a new branch from the specified remote branch and switch to it
 - `git checkout -b <branch_name> origin/master` is used to create a new branch from the master branch on the remote repository and switch to it
 
-- 
+
+## Not confident about this section
+- Difference between `git  fetch` and  `git fetch prune`
+    - `git fetch` will fetch all the branches from the remote repository
+    - `git fetch prune` will fetch all the branches from the remote repository and delete all the branches that have been deleted on the remote repository
+        - this is useful if you want to delete all the branches that have been deleted on the remote repository
+        - to delete all the branches that have been deleted on the remote repository without fetching the branches from the remote repository, use `git fetch -p`
